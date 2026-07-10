@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>페이지를 찾을 수 없습니다 · Rooti</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<style>
+  :root {
+    --accent: #4F46E5;          /* 코드별 강조색 — JS CONFIG에서 덮어씀 */
+    --ink: #14151C;             /* 제목/버튼 잉크 */
+    --muted: #787E8C;           /* 본문 */
+    --bg: #FBFBFC;              /* 배경 */
+    --wm: rgba(79,70,229,.055); /* 배경 숫자 한 겹 투명도 (두 겹 ≈ 11%) */
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  .stage {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* ── 배경 숫자 (슬라이스 플립) ───────────────────── */
+  .wm {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -52%);
+    perspective: 1600px;
+    user-select: none;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+  .wm__inner { position: relative; display: inline-block; }
+  .wm__base, .wm__strip {
+    font-size: 440px;            /* 배경 숫자 크기 */
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 0.9;
+    color: var(--wm);
+    white-space: nowrap;
+  }
+  .wm__strip {
+    position: absolute;
+    top: 0; left: 0;
+    transform-origin: 50% 50%;
+    backface-visibility: visible;
+    animation: es-flip var(--dur) ease-in-out infinite;
+  }
+  @keyframes es-flip {
+    0%   { transform: rotateX(0deg); }
+    7%   { transform: rotateX(-360deg); }  /* 7%만 넘어가고 나머지는 정지 → 한 칸씩 */
+    100% { transform: rotateX(-360deg); }
+  }
+
+  /* ── 본문 ───────────────────────────────────── */
+  .panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 64px;
+  }
+  .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 26px;
+    color: var(--accent);
+  }
+  .eyebrow svg { display: block; }
+  .eyebrow span {
+    font-family: "SF Mono", ui-monospace, Menlo, monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0 0 14px;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .desc {
+    margin: 0 0 40px;
+    max-width: 440px;
+    font-size: 17px;
+    line-height: 1.62;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+  .actions { display: flex; align-items: center; gap: 22px; }
+  .btn {
+    appearance: none; border: none; cursor: pointer;
+    font-family: inherit; font-size: 15px; font-weight: 600;
+    color: #fff; background: var(--ink);
+    padding: 14px 28px; border-radius: 10px;
+    transition: transform .12s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .link {
+    appearance: none; border: none; background: none; cursor: pointer;
+    font-family: inherit; font-size: 15px; font-weight: 500;
+    color: #9AA0AD; padding: 6px 2px;
+    transition: color .14s ease;
+  }
+  .link:hover { color: var(--ink); }
+
+  @media (max-width: 560px) {
+    .wm__base, .wm__strip { font-size: 220px; }
+    .panel { padding: 0 28px; }
+    h1 { font-size: 27px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .wm__strip { animation: none; }
+  }
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="wm"><div class="wm__inner" id="wm"></div></div>
+
+    <div class="panel">
+      <div class="eyebrow"><span id="eyebrow"></span></div>
+      <h1 id="title"></h1>
+      <p class="desc" id="desc"></p>
+      <div class="actions">
+        <button class="btn" id="primary"></button>
+        <button class="link" id="secondary"></button>
+      </div>
+    </div>
+  </div>
+
+<script>
+/* ════════════════════════════════════════════════════════════
+   여기만 바꾸면 됩니다. code 값을 PRESETS 키 중 하나로 설정.
+   ──────────────────────────────────────────────────────────── */
+var CONFIG = { code: "404" };
+
+/* 코드별 프리셋 — 강조색, 아이콘, 문구 */
+var PRESETS = {
+  "400":     { accent: "#D97706", icon: "alert",  eyebrow: "ERROR — 400", big: "400", title: "잘못된 요청입니다",       desc: "요청 형식이 올바르지 않습니다. 입력하신 내용을 다시 확인해 주세요.",            primary: "홈으로",   secondary: "뒤로 가기" },
+  "401":     { accent: "#4F46E5", icon: "lock",   eyebrow: "ERROR — 401", big: "401", title: "로그인이 필요합니다",       desc: "이 페이지를 보려면 먼저 로그인이 필요합니다.",                               primary: "로그인",   secondary: "홈으로" },
+  "403":     { accent: "#E11D48", icon: "shield", eyebrow: "ERROR — 403", big: "403", title: "접근 권한이 없습니다",       desc: "이 페이지에 접근할 수 있는 권한이 없습니다. 권한이 필요하면 관리자에게 문의해 주세요.", primary: "홈으로",   secondary: "뒤로 가기" },
+  "404":     { accent: "#4F46E5", icon: "search", eyebrow: "ERROR — 404", big: "404", title: "페이지를 찾을 수 없습니다",   desc: "요청하신 페이지가 사라졌거나 주소가 변경되었습니다.",                          primary: "홈으로",   secondary: "뒤로 가기" },
+  "500":     { accent: "#DC2626", icon: "server", eyebrow: "ERROR — 500", big: "500", title: "문제가 발생했습니다",        desc: "서버에 일시적인 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",                primary: "홈으로",   secondary: "다시 시도" },
+  "503":     { accent: "#0D9488", icon: "wrench", eyebrow: "ERROR — 503", big: "503", title: "서비스 점검 중입니다",       desc: "더 나은 서비스를 위해 시스템을 점검하고 있습니다. 잠시 후 다시 찾아주세요.",         primary: "홈으로",   secondary: "새로고침" },
+  "network": { accent: "#475569", icon: "wifi",   eyebrow: "NETWORK ERROR", big: "OFFLINE", title: "네트워크 연결이 불안정합니다", desc: "인터넷 연결 상태를 확인한 뒤 다시 시도해 주세요.",                       primary: "다시 시도", secondary: "홈으로" }
+};
+
+/* 아이콘 (1.75pt stroke, currentColor) */
+var ICONS = {
+  alert:  '<path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line>',
+  lock:   '<rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path>',
+  shield: '<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line>',
+  search: '<circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>',
+  server: '<rect x="2" y="3" width="20" height="7" rx="1.5"></rect><rect x="2" y="14" width="20" height="7" rx="1.5"></rect><line x1="6" y1="6.5" x2="6.01" y2="6.5"></line><line x1="6" y1="17.5" x2="6.01" y2="17.5"></line>',
+  wrench: '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.7-.7-2.5 2.5-2.5z"></path>',
+  wifi:   '<line x1="1" y1="1" x2="23" y2="23"></line><path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path><path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path><path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line>'
+};
+
+/* ── 슬라이스 플립 파라미터 ── */
+var N = 22;       // 세로로 자르는 조각 수 (많을수록 얇게)
+var STEP = 0.3;   // 조각 사이 시차(초). 한 칸씩 넘어가는 간격
+
+function hexA(hex, aa) { return hex + aa; } // #RRGGBB + 알파(2 hex)
+
+/* 버튼 라벨별 동작 */
+var ACTIONS = {
+  "홈으로":    function () { location.href = "/"; },
+  "뒤로 가기": function () { history.length > 1 ? history.back() : (location.href = "/"); },
+  "다시 시도": function () { location.reload(); },
+  "새로고침":  function () { location.reload(); },
+  "로그인":    function () { location.href = "https://dev.rooti.work/"; }
+};
+function bind(el, label) {
+  var fn = ACTIONS[label];
+  if (fn) el.onclick = fn;
+}
+
+function render() {
+  var cfg = PRESETS[CONFIG.code] || PRESETS["500"];
+  document.documentElement.style.setProperty("--accent", cfg.accent);
+  // 배경 숫자 한 겹 투명도 = 약 5.5% (두 겹이 겹쳐 ~11%). 강조색 + 알파 0e
+  document.documentElement.style.setProperty("--wm", hexA(cfg.accent, "0e"));
+
+  document.getElementById("eyebrow").textContent = cfg.eyebrow;
+  document.getElementById("title").textContent = cfg.title;
+  document.getElementById("desc").textContent = cfg.desc;
+  var pri = document.getElementById("primary");
+  pri.textContent = cfg.primary;
+  bind(pri, cfg.primary);
+  var sec = document.getElementById("secondary");
+  if (cfg.secondary) { sec.textContent = cfg.secondary + " →"; sec.style.display = ""; bind(sec, cfg.secondary); }
+  else { sec.style.display = "none"; }
+
+  // 아이콘
+  var ico = '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + (ICONS[cfg.icon] || ICONS.alert) + '</svg>';
+  document.querySelector(".eyebrow").insertAdjacentHTML("afterbegin", ico);
+
+  // 배경 숫자: 이음새 없는 base 한 장 + N개의 얇은 클립 조각(차례로 플립)
+  var dur = (N * STEP).toFixed(2) + "s";
+  var html = '<div class="wm__base">' + cfg.big + '</div>';
+  for (var i = 0; i < N; i++) {
+    var left = (i * 100 / N);
+    var right = 100 - ((i + 1) * 100 / N);
+    var delay = (i * STEP).toFixed(2) + "s";
+    html += '<div class="wm__strip" style="' +
+            'clip-path: inset(-20% ' + right + '% -20% ' + left + '%);' +
+            '--dur:' + dur + '; animation-delay:' + delay + ';">' + cfg.big + '</div>';
+  }
+  document.getElementById("wm").innerHTML = html;
+}
+render();
+</script>
+</body>
+</html>
