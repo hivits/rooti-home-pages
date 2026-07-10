@@ -5,7 +5,7 @@
     </a>
     <nav class="ml-auto flex items-center gap-5" aria-label="주요">
       <a class="text-[16px] font-semibold text-ink-600 no-underline transition-colors duration-150 hover:text-blue-deep" href="#contact">문의</a>
-      <a class="inline-flex h-[42px] items-center rounded-[11px] bg-ink-900 px-[22px] text-[15px] font-bold text-white no-underline transition-[transform,background] duration-[180ms] hover:-translate-y-px hover:bg-blue-deep" href="#">로그인</a>
+      <a class="inline-flex h-[42px] items-center rounded-[11px] bg-ink-900 px-[22px] text-[15px] font-bold text-white no-underline transition-[transform,background] duration-[180ms] hover:-translate-y-px hover:bg-blue-deep" href="https://dev.rooti.work/">로그인</a>
     </nav>
   </header>`}var n=`/assets/hero-dashboard-Bm2wm-a0.png`,r=`/assets/hero-splash-BHeTYyTF.png`,i=`w-[2.5px] origin-center rounded-[2px] bg-[#1e7ae4] animate-rt-wave motion-reduce:animate-none`,a=`
 <span class="flex h-[18px] items-center gap-[3px]" aria-hidden="true">
@@ -278,7 +278,7 @@
         <div class="${q} mt-[30px] mb-[18px]">고객지원</div>
         <div class="flex flex-col gap-3">
           <a class="${J}" href="#contact">문의</a>
-          <a class="${J}" href="#">로그인</a>
+          <a class="${J}" href="https://dev.rooti.work/">로그인</a>
         </div>
       </div>
     </div>
