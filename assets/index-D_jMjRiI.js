@@ -7,7 +7,7 @@
       <a class="text-[16px] font-semibold text-ink-600 no-underline transition-colors duration-150 hover:text-blue-deep" href="#contact">문의</a>
       <a class="inline-flex h-[42px] items-center rounded-[11px] bg-ink-900 px-[22px] text-[15px] font-bold text-white no-underline transition-[transform,background] duration-[180ms] hover:-translate-y-px hover:bg-blue-deep" href="https://dev.rooti.work/">로그인</a>
     </nav>
-  </header>`}var n=`/assets/hero-dashboard-Bm2wm-a0.png`,r=`/assets/hero-splash-BHeTYyTF.png`,i=`w-[2.5px] origin-center rounded-[2px] bg-[#1e7ae4] animate-rt-wave motion-reduce:animate-none`,a=`
+  </header>`}var n=`/assets/hero-dashboard-Cu15YSeU.png`,r=`/assets/hero-splash-wOhRaiBu.png`,i=`w-[2.5px] origin-center rounded-[2px] bg-[#1e7ae4] animate-rt-wave motion-reduce:animate-none`,a=`
 <span class="flex h-[18px] items-center gap-[3px]" aria-hidden="true">
   <span class="${i}" style="height:6px;animation-delay:-.05s"></span>
   <span class="${i}" style="height:6px;animation-delay:.32s"></span>
@@ -73,21 +73,18 @@
         <div class="text-[20px] font-medium text-ink-900">${t}</div>
         <div class="mt-1 text-[16px] text-ink-400">${n}</div>
       </div>
-    </div>`}var ie=[{src:s,name:`SGA솔루션`,h:`h-9 md:h-11`},{src:c,name:`연세올바른재활의학과의원`,h:`h-9 md:h-10`},{src:l,name:`KCC`,h:`h-[72px] md:h-24`},{src:u,name:`비트플래닛`,h:`h-9 md:h-10`},{src:ee,name:`KISCA`,h:`h-[72px] md:h-24`},{src:te,name:`건국대학교병원`,h:`h-12 md:h-14`},{src:ne,name:`moez`,h:`h-12 md:h-16`},{src:re,name:`유즈플레이스`,h:`h-9 md:h-11`},{src:d,name:`KPR`,h:`h-16 md:h-20`},{src:f,name:`종근당`,h:`h-12 md:h-14`},{src:p,name:`다이소`,h:`h-12 md:h-14`}],b=`flex items-center gap-16 pr-16 md:gap-24 md:pr-24`;function ae(){let e=ie.map(e=>`
-      <figure class="flex shrink-0 flex-col items-center gap-3">
-        <span class="flex h-20 items-center md:h-24">
-          <img src="${e.src}" alt="${e.name} 로고"
-            class="${e.h} w-auto max-w-[340px] object-contain" />
-        </span>
-        <figcaption class="text-[14px] font-medium whitespace-nowrap text-ink-400 md:text-[15px]">${e.name}</figcaption>
-      </figure>`).join(``);return`
+    </div>`}var ie=[{src:s,name:`SGA솔루션`,h:`h-9 md:h-11`},{src:c,name:`연세올바른재활의학과의원`,h:`h-9 md:h-10`},{src:l,name:`KCC`,h:`h-[72px] md:h-24`},{src:u,name:`비트플래닛`,h:`h-10 md:h-12`},{src:ee,name:`KISCA`,h:`h-20 md:h-28`},{src:te,name:`건국대학교병원`,h:`h-12 md:h-14`},{src:ne,name:`moez`,h:`h-11 md:h-14`},{src:re,name:`유즈플레이스`,h:`h-9 md:h-11`},{src:d,name:`KPR`,h:`h-16 md:h-20`},{src:f,name:`종근당`,h:`h-12 md:h-14`},{src:p,name:`다이소`,h:`h-12 md:h-14`}],b=`flex items-center gap-16 pr-16 md:gap-24 md:pr-24`;function ae(){let e=ie.map(e=>`
+      <span class="flex h-20 shrink-0 items-center md:h-28">
+        <img src="${e.src}" alt="${e.name} 로고"
+          class="${e.h} w-auto max-w-[340px] object-contain" />
+      </span>`).join(``);return`
   <section class="relative w-full overflow-hidden bg-white pt-2 pb-16 section-px md:pb-24" data-screen-label="01b Partners">
     <div class="mb-10 text-center" data-reveal>
       ${h(`TRUSTED BY`)}
       <div class="text-[19px] font-semibold text-ink-600">Rooti와 함께하는 기업</div>
     </div>
     <div class="relative [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]" data-reveal>
-      <div class="flex w-max items-start animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+      <div class="flex w-max items-center animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
         <div class="${b}">${e}</div>
         <div class="${b}" aria-hidden="true">${e}</div>
       </div>
