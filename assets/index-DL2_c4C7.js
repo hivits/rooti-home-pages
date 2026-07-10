@@ -27,20 +27,26 @@
       </p>
     </div>
 
-    <div class="relative h-[560px] md:h-[806px]" data-reveal style="--reveal-delay:200ms">
-      <div class="absolute top-8 right-0 w-[min(88%,500px)] overflow-hidden rounded-2xl shadow-float animate-rt-float-b motion-reduce:animate-none md:w-[500px]">
-        <img src="${n}" alt="Rooti 관리자 대시보드 화면" class="w-full" />
-      </div>
+    <div class="relative flex h-[560px] items-center justify-center md:h-[806px]" data-reveal style="--reveal-delay:200ms">
+      <!-- Device morph: 브라우저(대시보드) ↔ 폰(스플래시) 형태 전환 -->
+      <div class="scale-[.62] min-[440px]:scale-75 md:scale-100">
+        <div class="group relative h-[340px] w-[520px] overflow-hidden rounded-2xl bg-white shadow-float animate-device-frame hover:[animation-play-state:paused] motion-reduce:animate-none">
+          <img src="${n}" alt="Rooti 관리자 대시보드 화면"
+            class="absolute inset-x-0 top-10 h-[calc(100%-40px)] w-full object-cover object-top animate-device-fade-a group-hover:[animation-play-state:paused] motion-reduce:animate-none" />
+          <img src="${r}" alt="Rooti 앱 스플래시 화면"
+            class="absolute inset-0 h-full w-full object-cover opacity-0 animate-device-fade-b group-hover:[animation-play-state:paused] motion-reduce:animate-none" />
 
-      <div class="absolute bottom-0 left-0 w-[366px] drop-shadow-[0_44px_66px_rgb(16_26_48/0.34)] animate-rt-float motion-reduce:animate-none">
-        <div class="relative overflow-hidden rounded-[44px]">
-          <span class="pointer-events-none absolute top-[9%] left-[30%] h-[26%] w-[52%] rounded-full bg-[radial-gradient(circle_at_42%_40%,rgb(46_196_148/0.5),rgb(46_196_148/0)_70%)] mix-blend-multiply blur-[22px] animate-rt-blob-1 motion-reduce:animate-none" aria-hidden="true"></span>
-          <span class="pointer-events-none absolute top-[6%] left-[16%] h-[24%] w-[48%] rounded-full bg-[radial-gradient(circle_at_50%_45%,rgb(56_158_232/0.42),rgb(56_158_232/0)_70%)] mix-blend-multiply blur-[24px] animate-rt-blob-2 motion-reduce:animate-none" aria-hidden="true"></span>
-          <img src="${r}" alt="Rooti 앱 스플래시 화면" class="relative w-full" />
+          <div class="absolute inset-x-0 top-0 z-10 flex h-10 items-center gap-1.5 border-b border-border-300 bg-white px-4 animate-device-fade-a group-hover:[animation-play-state:paused] motion-reduce:animate-none" aria-hidden="true">
+            <span class="size-2.5 rounded-full bg-[#e3897e]"></span>
+            <span class="size-2.5 rounded-full bg-[#e9c46a]"></span>
+            <span class="size-2.5 rounded-full bg-[#8fd0a2]"></span>
+            <span class="ml-2 rounded-md border border-border-300 bg-surface-inner px-2.5 py-0.5 text-[11px] font-semibold text-ink-400">app.rooti.kr/dashboard</span>
+          </div>
+          <div class="absolute top-2.5 left-1/2 z-10 h-6 w-24 -translate-x-1/2 rounded-full bg-[#0d1424] opacity-0 animate-device-fade-b group-hover:[animation-play-state:paused] motion-reduce:animate-none" aria-hidden="true"></div>
         </div>
       </div>
 
-      <div class="absolute right-2 bottom-[42px] w-[min(80%,392px)] drop-shadow-[0_28px_50px_rgb(16_26_48/0.16)] animate-rt-float [animation-delay:.5s] motion-reduce:animate-none md:w-[392px]">
+      <div class="absolute right-2 bottom-[42px] z-20 w-[min(80%,392px)] drop-shadow-[0_28px_50px_rgb(16_26_48/0.16)] animate-rt-float [animation-delay:.5s] motion-reduce:animate-none md:w-[392px]">
         <div class="rounded-[20px] border border-[#eff2f7] bg-white py-5 pr-[18px] pl-[22px]">
           <div class="mb-4 flex items-center gap-3.5">
             <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-white shadow-[0_4px_12px_rgb(26_140_200/0.16)]" aria-hidden="true">
