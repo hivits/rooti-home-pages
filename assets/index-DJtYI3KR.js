@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  </section>`}var s=`/assets/sga-DoarGXGB.png`,c=`/assets/barun-BVzLyU0L.svg`,l=`/assets/yonsei-DD4NGIz7.png`,u=`/assets/kcc-DqU6JWwm.png`,ee=`/assets/bitplanet-BULMkOPX.png`,te=`/assets/kisca-CzL9aEdL.svg`,ne=`/assets/kuh-DUHJTUfN.png`,re=`/assets/moez-BZ_ITJAw.png`,d=`/assets/useplace-CbeNqQBl.png`,f=`/assets/kpr-D7wMRxjY.png`,p=`/assets/ckd-0wDeBjDs.png`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
+  </section>`}var s=`/assets/sga-C0DmN-Ne.png`,c=`/assets/yonsei-Cro44Swk.png`,l=`/assets/kcc-DqU6JWwm.png`,u=`/assets/bitplanet-DWgkyT48.jpg`,ee=`/assets/kisca-CzL9aEdL.svg`,te=`/assets/kuh-BhstKM18.png`,ne=`/assets/moez-BZ_ITJAw.png`,re=`/assets/useplace-CNPBFzpI.png`,d=`/assets/kpr-CjyS2xfo.png`,f=`/assets/ckd-9fbXdkq8.jpg`,p=`/assets/daiso-BVurZFpG.jpg`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
     <div class="mb-12 text-center" data-reveal>
       ${h(e)}
       ${g(t)}
@@ -67,16 +67,21 @@
         <div class="text-[20px] font-medium text-ink-900">${t}</div>
         <div class="mt-1 text-[16px] text-ink-400">${n}</div>
       </div>
-    </div>`}var ie=[{src:s,name:`SGA`},{src:c,name:`BARUN`},{src:l,name:`YONSEI`},{src:u,name:`KCC`},{src:ee,name:`BITPLANET`},{src:te,name:`KISCA`},{src:ne,name:`KUH`},{src:re,name:`MOEZ`},{src:d,name:`USEPLACE`},{src:f,name:`KPR`},{src:p,name:`CKD`}],b=`flex items-center gap-14 pr-14 md:gap-20 md:pr-20`;function ae(){let e=ie.map(e=>`
-      <img src="${e.src}" alt="${e.name} 로고" width="240" height="240"
-        class="h-12 w-auto max-w-[150px] object-contain opacity-80 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 md:h-14" />`).join(``);return`
+    </div>`}var ie=[{src:s,name:`SGA솔루션`},{src:c,name:`연세올바른재활의학과의원`},{src:l,name:`KCC`},{src:u,name:`비트플래닛`},{src:ee,name:`KISCA`},{src:te,name:`건국대학교병원`},{src:ne,name:`moez`},{src:re,name:`유즈플레이스`},{src:d,name:`KPR`},{src:f,name:`종근당`},{src:p,name:`다이소`}],b=`flex items-center gap-16 pr-16 md:gap-24 md:pr-24`;function ae(){let e=ie.map(e=>`
+      <figure class="flex shrink-0 flex-col items-center gap-3">
+        <span class="flex h-16 items-center md:h-20">
+          <img src="${e.src}" alt="${e.name} 로고"
+            class="max-h-full w-auto max-w-[240px] object-contain" />
+        </span>
+        <figcaption class="text-[14px] font-medium whitespace-nowrap text-ink-400 md:text-[15px]">${e.name}</figcaption>
+      </figure>`).join(``);return`
   <section class="relative w-full overflow-hidden bg-white pt-2 pb-16 section-px md:pb-24" data-screen-label="01b Partners">
     <div class="mb-10 text-center" data-reveal>
       ${h(`TRUSTED BY`)}
       <div class="text-[19px] font-semibold text-ink-600">Rooti와 함께하는 기업</div>
     </div>
     <div class="relative [mask-image:linear-gradient(to_right,transparent,#000_12%,#000_88%,transparent)]" data-reveal>
-      <div class="flex w-max items-center animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+      <div class="flex w-max items-start animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
         <div class="${b}">${e}</div>
         <div class="${b}" aria-hidden="true">${e}</div>
       </div>
