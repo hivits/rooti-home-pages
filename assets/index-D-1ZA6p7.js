@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-  </section>`}var s=`/assets/sga-DoarGXGB.png`,ee=`/assets/barun-BVzLyU0L.svg`,c=`/assets/yonsei-DD4NGIz7.png`,l=`/assets/kcc-DqU6JWwm.png`,te=`/assets/bitplanet-BULMkOPX.png`,ne=`/assets/kisca-CzL9aEdL.svg`,re=`/assets/kuh-DUHJTUfN.png`,u=`/assets/moez-BZ_ITJAw.png`,d=`/assets/useplace-CbeNqQBl.png`,f=`/assets/kpr-D7wMRxjY.png`,p=`/assets/ckd-0wDeBjDs.png`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
+  </section>`}var s=`/assets/sga-DoarGXGB.png`,c=`/assets/barun-BVzLyU0L.svg`,l=`/assets/yonsei-DD4NGIz7.png`,u=`/assets/kcc-DqU6JWwm.png`,ee=`/assets/bitplanet-BULMkOPX.png`,te=`/assets/kisca-CzL9aEdL.svg`,ne=`/assets/kuh-DUHJTUfN.png`,re=`/assets/moez-BZ_ITJAw.png`,d=`/assets/useplace-CbeNqQBl.png`,f=`/assets/kpr-D7wMRxjY.png`,p=`/assets/ckd-0wDeBjDs.png`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
     <div class="mb-12 text-center" data-reveal>
       ${h(e)}
       ${g(t)}
@@ -67,7 +67,7 @@
         <div class="text-[20px] font-medium text-ink-900">${t}</div>
         <div class="mt-1 text-[16px] text-ink-400">${n}</div>
       </div>
-    </div>`}var ie=[{src:s,name:`SGA`},{src:ee,name:`BARUN`},{src:c,name:`YONSEI`},{src:l,name:`KCC`},{src:te,name:`BITPLANET`},{src:ne,name:`KISCA`},{src:re,name:`KUH`},{src:u,name:`MOEZ`},{src:d,name:`USEPLACE`},{src:f,name:`KPR`},{src:p,name:`CKD`}],b=`flex items-center gap-14 pr-14 md:gap-20 md:pr-20`;function ae(){let e=ie.map(e=>`
+    </div>`}var ie=[{src:s,name:`SGA`},{src:c,name:`BARUN`},{src:l,name:`YONSEI`},{src:u,name:`KCC`},{src:ee,name:`BITPLANET`},{src:te,name:`KISCA`},{src:ne,name:`KUH`},{src:re,name:`MOEZ`},{src:d,name:`USEPLACE`},{src:f,name:`KPR`},{src:p,name:`CKD`}],b=`flex items-center gap-14 pr-14 md:gap-20 md:pr-20`;function ae(){let e=ie.map(e=>`
       <img src="${e.src}" alt="${e.name} 로고" width="240" height="240"
         class="h-12 w-auto max-w-[150px] object-contain opacity-80 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 md:h-14" />`).join(``);return`
   <section class="relative w-full overflow-hidden bg-white pt-2 pb-16 section-px md:pb-24" data-screen-label="01b Partners">
@@ -192,7 +192,7 @@
       </div>
       <div class="mt-[38px] grid grid-cols-1 gap-5 md:grid-cols-2" data-reveal-stagger>${e}</div>
     </div>
-  </section>`}var G=`/assets/guardian-home-CF_cCeCX.png`,K=[{title:`실시간 근무 확인`,desc:`출퇴근 및 근무 현황을 실시간으로 확인`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#8693AB" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" fill="#8693AB"/></svg>`},{title:`근무 기록 관리`,desc:`근로일지와 제출 서류를 손쉽게 확인`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 3h9l4 4v14H6z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 16h4" stroke="#8693AB" stroke-width="1.8" stroke-linecap="round"/></svg>`},{title:`공지사항 · 문의하기`,desc:`공지사항을 확인하고 궁금한 점을 바로 문의`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 0 0-12 0c0 6-2.5 7.5-2.5 7.5h17S18 14 18 8Z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/><path d="M10.3 19a2 2 0 0 0 3.4 0" stroke="#8693AB" stroke-width="1.8" stroke-linecap="round"/></svg>`},{title:`빠른 연락`,desc:`근로자 및 관리자에게 즉시 전화 연결`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 4l3 .6 1 3-2 1.4a11 11 0 0 0 6 6l1.4-2 3 1 .6 3a2 2 0 0 1-2.2 2A16 16 0 0 1 4 6.2 2 2 0 0 1 6 4Z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/></svg>`}];function q(){let e=K.map(e=>y(e.icon,e.title,e.desc)).join(``);return`
+  </section>`}var G=`/assets/guardian-home-CF_cCeCX.png`,oe=[{title:`실시간 근무 확인`,desc:`출퇴근 및 근무 현황을 실시간으로 확인`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#8693AB" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" fill="#8693AB"/></svg>`},{title:`근무 기록 관리`,desc:`근로일지와 제출 서류를 손쉽게 확인`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 3h9l4 4v14H6z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v5h5M9 13h6M9 16h4" stroke="#8693AB" stroke-width="1.8" stroke-linecap="round"/></svg>`},{title:`공지사항 · 문의하기`,desc:`공지사항을 확인하고 궁금한 점을 바로 문의`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 8a6 6 0 0 0-12 0c0 6-2.5 7.5-2.5 7.5h17S18 14 18 8Z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/><path d="M10.3 19a2 2 0 0 0 3.4 0" stroke="#8693AB" stroke-width="1.8" stroke-linecap="round"/></svg>`},{title:`빠른 연락`,desc:`근로자 및 관리자에게 즉시 전화 연결`,icon:`<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 4l3 .6 1 3-2 1.4a11 11 0 0 0 6 6l1.4-2 3 1 .6 3a2 2 0 0 1-2.2 2A16 16 0 0 1 4 6.2 2 2 0 0 1 6 4Z" stroke="#8693AB" stroke-width="1.8" stroke-linejoin="round"/></svg>`}];function K(){let e=oe.map(e=>y(e.icon,e.title,e.desc)).join(``);return`
   <section class="${m} grid grid-cols-1 items-center gap-8 bg-surface-alt md:grid-cols-[1.1fr_.9fr] md:gap-20" data-screen-label="08 Guardian">
     <div>
       <div data-reveal>
@@ -207,7 +207,7 @@
         <img src="${G}" alt="Rooti 보호자 앱 - 홈 화면" class="w-full" />
       </div>
     </div>
-  </section>`}var J=`/assets/admin-dashboard-C4rKldk0.png`,oe=[`통합 근무관리`,`업무 생성 및 배치`,`출퇴근 관리`,`근로일지`,`전체 일정 관리`,`서류 관리`,`근로자 관리`];function se(){let e=oe.map(v).join(``);return`
+  </section>`}var q=`/assets/admin-dashboard-C4rKldk0.png`,se=[`통합 근무관리`,`업무 생성 및 배치`,`출퇴근 관리`,`근로일지`,`전체 일정 관리`,`서류 관리`,`근로자 관리`];function ce(){let e=se.map(v).join(``);return`
   <section class="${m} flex flex-col bg-white" data-screen-label="09 Admin">
     <div class="mb-9 flex flex-wrap items-end justify-between gap-5" data-reveal-stagger>
       <div data-reveal>
@@ -225,10 +225,10 @@
         <span class="ml-4 rounded-lg border border-border-300 bg-surface-inner px-4 py-1.5 text-[14px] font-semibold text-ink-400">app.rooti.kr/dashboard</span>
       </div>
       <div class="aspect-[1909/815] w-full overflow-hidden bg-white">
-        <img src="${J}" alt="Rooti 관리자 대시보드 화면" class="h-full w-full object-cover object-top" />
+        <img src="${q}" alt="Rooti 관리자 대시보드 화면" class="h-full w-full object-cover object-top" />
       </div>
     </div>
-  </section>`}var ce=[{value:`286`,unit:`명`,desc:`전국 거점에서 함께 일하는 장애인 고용 인원<br />(2025.12 계약 포함)`},{value:`90`,unit:`%`,desc:`고용부담금 감면 (최대)<br />PET 무인 수거 시스템 연계 도입 시 기업 혜택`}];function le(){let e=ce.map(e=>`
+  </section>`}var le=[{value:`286`,unit:`명`,desc:`전국 거점에서 함께 일하는 장애인 고용 인원<br />(2025.12 계약 포함)`},{value:`90`,unit:`%`,desc:`고용부담금 감면 (최대)<br />PET 무인 수거 시스템 연계 도입 시 기업 혜택`}];function ue(){let e=le.map(e=>`
       <div data-reveal>
         <div class="flex items-baseline justify-center gap-2">
           <span class="text-[76px] leading-none font-normal text-blue-primary md:text-[108px]" data-count-to="${e.value}">${e.value}</span>
@@ -242,7 +242,7 @@
       ${g(`Rooti가 만드는 변화`)}
     </div>
     <div class="grid grid-cols-1 items-start justify-center gap-12 min-[720px]:grid-cols-[repeat(2,minmax(0,300px))] min-[720px]:gap-[90px]" data-reveal-stagger>${e}</div>
-  </section>`}var ue=[{eyebrow:`ENVIRONMENT`,eyebrowClass:`text-green-primary`,title:`환경 · 자원순환`,body:`버려지는 플라스틱이 근로자의 손을 거쳐<br />새로운 가치로 다시 태어납니다.`,pills:[`자원순환`,`비츠봇 운영`,`업사이클링 제품`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><path d="M5 19c0-8 6-13 15-14-1 10-7 15-14 14Z" fill="#E1F2E9"/><path d="M11 13c2-2 5-3.5 7-4" stroke="#CDE9D9" stroke-width="1.1" stroke-linecap="round"/></svg>`},{eyebrow:`SOCIAL`,eyebrowClass:`text-sky-primary`,title:`사회`,body:`중증장애인에게 안정적인 일자리를 제공하고<br />자립을 지원합니다.`,pills:[`중증장애인 일자리`,`안정적인 근무 환경`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" fill="#DCEFFA"/><circle cx="16.5" cy="9.5" r="2.4" fill="#DCEFFA"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" stroke="#DCEFFA" stroke-width="1.3" stroke-linecap="round"/><path d="M14.5 19c.2-2.4 1.8-4 4-4 1.6 0 3 .9 3.5 2.4" stroke="#DCEFFA" stroke-width="1.1" stroke-linecap="round"/></svg>`},{eyebrow:`GOVERNANCE`,eyebrowClass:`text-blue-deep`,title:`지배구조`,body:`근태와 업무 데이터를 체계적으로 관리해<br />투명한 운영을 만듭니다.`,pills:[`체계적인 근태 관리`,`업무 관리`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.2c0 4.4-3 8-7 9.2-4-1.2-7-4.8-7-9.2V5.6L12 3Z" fill="#E4EAFC"/><path d="M8.8 12l2.3 2.3 4-4.4" stroke="#D2DCFA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`}];function de(){let e=ue.map(e=>`
+  </section>`}var de=[{eyebrow:`ENVIRONMENT`,eyebrowClass:`text-green-primary`,title:`환경 · 자원순환`,body:`버려지는 플라스틱이 근로자의 손을 거쳐<br />새로운 가치로 다시 태어납니다.`,pills:[`자원순환`,`비츠봇 운영`,`업사이클링 제품`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><path d="M5 19c0-8 6-13 15-14-1 10-7 15-14 14Z" fill="#E1F2E9"/><path d="M11 13c2-2 5-3.5 7-4" stroke="#CDE9D9" stroke-width="1.1" stroke-linecap="round"/></svg>`},{eyebrow:`SOCIAL`,eyebrowClass:`text-sky-primary`,title:`사회`,body:`중증장애인에게 안정적인 일자리를 제공하고<br />자립을 지원합니다.`,pills:[`중증장애인 일자리`,`안정적인 근무 환경`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" fill="#DCEFFA"/><circle cx="16.5" cy="9.5" r="2.4" fill="#DCEFFA"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5" stroke="#DCEFFA" stroke-width="1.3" stroke-linecap="round"/><path d="M14.5 19c.2-2.4 1.8-4 4-4 1.6 0 3 .9 3.5 2.4" stroke="#DCEFFA" stroke-width="1.1" stroke-linecap="round"/></svg>`},{eyebrow:`GOVERNANCE`,eyebrowClass:`text-blue-deep`,title:`지배구조`,body:`근태와 업무 데이터를 체계적으로 관리해<br />투명한 운영을 만듭니다.`,pills:[`체계적인 근태 관리`,`업무 관리`],watermark:`<svg width="190" height="190" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 2.6v5.2c0 4.4-3 8-7 9.2-4-1.2-7-4.8-7-9.2V5.6L12 3Z" fill="#E4EAFC"/><path d="M8.8 12l2.3 2.3 4-4.4" stroke="#D2DCFA" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`}];function fe(){let e=de.map(e=>`
     <article class="relative flex flex-col overflow-hidden rounded-[26px] border border-border-300 bg-white px-[34px] py-9 shadow-card transition-[translate,box-shadow] duration-300 hover:-translate-y-1.5 hover:shadow-[0_26px_56px_-30px_rgb(16_26_48/0.35)]" data-reveal>
       <div class="mb-[18px]">
         <div class="mb-1.5 text-[14px] font-semibold tracking-[0.12em] ${e.eyebrowClass}">${e.eyebrow}</div>
@@ -262,7 +262,7 @@
       <p class="mt-3.5 text-[19px] leading-[1.6] text-ink-600">모두가 함께 일할 수 있는 환경을 만들며 사회적 가치를 실현합니다.</p>
     </div>
     <div class="relative grid grid-cols-1 items-stretch gap-7 md:grid-cols-3" data-reveal-stagger>${e}</div>
-  </section>`}var fe=[{label:`회사명`,value:`하이비츠`},{label:`대표자`,value:`최찬숙`},{label:`사업자등록번호`,value:`788-86-01781`},{label:`주소`,value:`서울 구로구 디지털로31길 62<br />1013, 1014호 (구로동, 아티스포럼)`},{label:`대표번호`,value:`02-3281-8880`},{label:`이메일`,value:`<a class="text-white/92 no-underline hover:underline" href="mailto:hivits@naver.com">hivits@naver.com</a>`}],Y=`mb-5 text-[16px] font-semibold tracking-[0.16em] text-white/50`,X=`text-[16px] text-white/90 no-underline hover:text-white`;function pe(){return`
+  </section>`}var pe=[{label:`회사명`,value:`하이비츠`},{label:`대표자`,value:`최찬숙`},{label:`사업자등록번호`,value:`788-86-01781`},{label:`주소`,value:`서울 구로구 디지털로31길 62<br />1013, 1014호 (구로동, 아티스포럼)`},{label:`대표번호`,value:`02-3281-8880`},{label:`이메일`,value:`<a class="text-white/92 no-underline hover:underline" href="mailto:hivits@naver.com">hivits@naver.com</a>`}],J=`mb-5 text-[16px] font-semibold tracking-[0.16em] text-white/50`,Y=`text-[16px] text-white/90 no-underline hover:text-white`;function me(){return`
   <footer id="contact" class="relative flex w-full flex-col items-center overflow-hidden bg-[linear-gradient(150deg,#142a52,#0d1b38)] pt-[120px] pb-14 section-px scroll-mt-[72px]" data-screen-label="10 Contact">
     <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(rgb(255_255_255/0.08)_1.3px,transparent_1.3px)] bg-[size:34px_34px]" aria-hidden="true"></div>
     <div class="pointer-events-none absolute -top-[140px] -left-[90px] size-[480px] rounded-full bg-[radial-gradient(circle,rgb(255_255_255/0.14),transparent_70%)]" aria-hidden="true"></div>
@@ -275,8 +275,8 @@
       </div>
 
       <div data-reveal>
-        <div class="${Y}">회사정보</div>
-        <div class="flex flex-col gap-[18px]">${fe.map(e=>`
+        <div class="${J}">회사정보</div>
+        <div class="flex flex-col gap-[18px]">${pe.map(e=>`
       <div>
         <div class="mb-[5px] text-[14px] text-white/50">${e.label}</div>
         <div class="text-[16px] leading-[1.6] text-white/92">${e.value}</div>
@@ -284,28 +284,49 @@
       </div>
 
       <div data-reveal>
-        <div class="${Y}">정책</div>
+        <div class="${J}">정책</div>
         <div class="flex flex-col gap-3">
-          <a class="${X}" href="#">개인정보처리방침</a>
-          <a class="${X}" href="#">이용약관</a>
+          <a class="${Y}" href="#">개인정보처리방침</a>
+          <a class="${Y}" href="#">이용약관</a>
         </div>
-        <div class="${Y} mt-[30px] mb-[18px]">고객지원</div>
+        <div class="${J} mt-[30px] mb-[18px]">고객지원</div>
         <div class="flex flex-col gap-3">
-          <a class="${X}" href="#contact">문의</a>
-          <a class="${X}" href="https://dev.rooti.work/">로그인</a>
+          <a class="${Y}" href="#contact">문의</a>
+          <a class="${Y}" href="https://dev.rooti.work/">로그인</a>
         </div>
       </div>
     </div>
 
     <div class="relative mx-auto mt-9 w-full max-w-[1320px] text-[14px] text-white/50">© 2026 Rooti. ESG · Accessibility · Inclusive Design</div>
-  </footer>`}var Z=[`opacity-0`,`translate-y-2`,`pointer-events-none`],Q=[`opacity-100`,`translate-y-0`,`pointer-events-auto`];function me(){return`
+  </footer>`}var X=[`opacity-0`,`translate-y-2`,`pointer-events-none`],Z=[`opacity-100`,`translate-y-0`,`pointer-events-auto`];function he(){return`
   <button
-    class="fixed right-8 bottom-8 z-[300] flex size-14 ${Z.join(` `)} cursor-pointer items-center justify-center rounded-full border-none bg-ink-900 text-white shadow-[0_14px_34px_-10px_rgb(16_26_48/0.6)] transition-all duration-250 hover:bg-blue-deep"
+    class="fixed right-8 bottom-8 z-[300] flex size-14 ${X.join(` `)} cursor-pointer items-center justify-center rounded-full border-none bg-ink-900 text-white shadow-[0_14px_34px_-10px_rgb(16_26_48/0.6)] transition-all duration-250 hover:bg-blue-deep"
     aria-label="맨 위로"
     data-back-to-top
   >
     ${T}
-  </button>`}function he(){let e=document.querySelector(`[data-back-to-top]`);if(!e)return;e.addEventListener(`click`,()=>{window.scrollTo({top:0,behavior:`smooth`})});let t=()=>{let t=window.scrollY>600;e.classList.remove(...t?Z:Q),e.classList.add(...t?Q:Z)};t(),window.addEventListener(`scroll`,t,{passive:!0})}var ge=window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;function $(){document.querySelectorAll(`[data-reveal-stagger]`).forEach(e=>{e.querySelectorAll(`:scope > [data-reveal]`).forEach((e,t)=>{e.style.setProperty(`--reveal-delay`,`${t*80}ms`)})});let e=document.querySelectorAll(`[data-reveal]`);if(!e.length)return;let t=e=>{e.removeAttribute(`data-reveal`),e.style.removeProperty(`--reveal-delay`)},n=new IntersectionObserver(e=>{for(let r of e){if(!r.isIntersecting)continue;let e=r.target;e.classList.add(`is-revealed`),e.addEventListener(`transitionend`,()=>t(e),{once:!0}),setTimeout(()=>t(e),1800),n.unobserve(e)}},{threshold:.15,rootMargin:`0px 0px -8% 0px`});e.forEach(e=>n.observe(e))}function _e(){let e=document.querySelectorAll(`[data-count-to]`);if(!e.length)return;let t=e=>{let t=Number(e.dataset.countTo??`0`);if(ge||!Number.isFinite(t)){e.textContent=String(t);return}let n=0,r=i=>{n||=i;let a=Math.min((i-n)/1600,1),o=1-2**(-10*a);e.textContent=String(Math.round(t*o)),a<1?requestAnimationFrame(r):e.textContent=String(t)};requestAnimationFrame(r)},n=new IntersectionObserver(e=>{for(let r of e)r.isIntersecting&&(t(r.target),n.unobserve(r.target))},{threshold:.5});e.forEach(e=>n.observe(e))}function ve(){let e=document.querySelector(`header`);if(!e)return;let t=()=>{e.classList.toggle(`is-scrolled`,window.scrollY>8)};t(),window.addEventListener(`scroll`,t,{passive:!0})}document.documentElement.classList.add(`js`);var ye=document.querySelector(`#app`);ye.innerHTML=`
+  </button>`}function ge(){let e=document.querySelector(`[data-back-to-top]`);if(!e)return;e.addEventListener(`click`,()=>{window.scrollTo({top:0,behavior:`smooth`})});let t=()=>{let t=window.scrollY>600;e.classList.remove(...t?X:Z),e.classList.add(...t?Z:X)};t(),window.addEventListener(`scroll`,t,{passive:!0})}var Q=`w-[5px] origin-center rounded-full animate-rt-wave motion-reduce:animate-none`,$=`
+<span class="flex h-9 items-end justify-center gap-[5px]" aria-hidden="true">
+  <span class="${Q} bg-blue-tint-border" style="height:12px;animation-delay:.55s"></span>
+  <span class="${Q} bg-sky-primary" style="height:20px;animation-delay:.4s"></span>
+  <span class="${Q} bg-blue-primary" style="height:28px;animation-delay:.25s"></span>
+  <span class="${Q} bg-blue-deep" style="height:36px;animation-delay:.1s"></span>
+  <span class="${Q} bg-blue-primary" style="height:28px;animation-delay:.32s"></span>
+  <span class="${Q} bg-sky-primary" style="height:20px;animation-delay:.48s"></span>
+  <span class="${Q} bg-blue-tint-border" style="height:12px;animation-delay:.62s"></span>
+</span>`;function _e(){return`
+  <div
+    class="fixed inset-0 z-[400] flex translate-y-0 flex-col items-center justify-center gap-7 bg-white transition-[translate] duration-700 ease-[cubic-bezier(.45,0,.15,1)]"
+    role="status"
+    aria-label="페이지 로딩 중"
+    data-loader
+  >
+    <div class="flex flex-col items-center gap-7 transition-opacity duration-300" data-loader-inner>
+      <img src="${e}" alt="Rooti" class="h-11 w-auto" />
+      ${$}
+    </div>
+  </div>`}function ve(e){let t=document.querySelector(`[data-loader]`);if(!t){e();return}if(window.matchMedia(`(prefers-reduced-motion: reduce)`).matches){t.remove(),e();return}document.documentElement.style.overflow=`hidden`;let n=()=>{document.documentElement.style.overflow=``,t.querySelector(`[data-loader-inner]`)?.classList.add(`opacity-0`),t.classList.remove(`translate-y-0`),t.classList.add(`-translate-y-full`,`pointer-events-none`),e(),t.addEventListener(`transitionend`,()=>t.remove(),{once:!0}),setTimeout(()=>t.remove(),1200)},r=new Promise(e=>{document.readyState===`complete`?e():window.addEventListener(`load`,()=>e(),{once:!0})}),i=new Promise(e=>setTimeout(e,1100)),a=new Promise(e=>setTimeout(e,3e3));Promise.race([Promise.all([r,i]).then(()=>void 0),a]).then(n)}var ye=window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;function be(){document.querySelectorAll(`[data-reveal-stagger]`).forEach(e=>{e.querySelectorAll(`:scope > [data-reveal]`).forEach((e,t)=>{e.style.setProperty(`--reveal-delay`,`${t*80}ms`)})});let e=document.querySelectorAll(`[data-reveal]`);if(!e.length)return;let t=e=>{e.removeAttribute(`data-reveal`),e.style.removeProperty(`--reveal-delay`)},n=new IntersectionObserver(e=>{for(let r of e){if(!r.isIntersecting)continue;let e=r.target;e.classList.add(`is-revealed`),e.addEventListener(`transitionend`,()=>t(e),{once:!0}),setTimeout(()=>t(e),1800),n.unobserve(e)}},{threshold:.15,rootMargin:`0px 0px -8% 0px`});e.forEach(e=>n.observe(e))}function xe(){let e=document.querySelectorAll(`[data-count-to]`);if(!e.length)return;let t=e=>{let t=Number(e.dataset.countTo??`0`);if(ye||!Number.isFinite(t)){e.textContent=String(t);return}let n=0,r=i=>{n||=i;let a=Math.min((i-n)/1600,1),o=1-2**(-10*a);e.textContent=String(Math.round(t*o)),a<1?requestAnimationFrame(r):e.textContent=String(t)};requestAnimationFrame(r)},n=new IntersectionObserver(e=>{for(let r of e)r.isIntersecting&&(t(r.target),n.unobserve(r.target))},{threshold:.5});e.forEach(e=>n.observe(e))}function Se(){let e=document.querySelector(`header`);if(!e)return;let t=()=>{e.classList.toggle(`is-scrolled`,window.scrollY>8)};t(),window.addEventListener(`scroll`,t,{passive:!0})}document.documentElement.classList.add(`js`);var Ce=document.querySelector(`#app`);Ce.innerHTML=`
+  ${_e()}
   ${t()}
   <main>
     ${o()}
@@ -314,11 +335,11 @@
     ${k()}
     ${j()}
     ${W()}
-    ${q()}
-    ${se()}
-    ${le()}
-    ${de()}
+    ${K()}
+    ${ce()}
+    ${ue()}
+    ${fe()}
   </main>
-  ${pe()}
   ${me()}
-`,he(),$(),_e(),ve();
+  ${he()}
+`,ge(),Se(),ve(()=>{be(),xe()});
