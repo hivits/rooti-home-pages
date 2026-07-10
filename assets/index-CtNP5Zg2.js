@@ -7,7 +7,7 @@
       <a class="text-[16px] font-semibold text-ink-600 no-underline transition-colors duration-150 hover:text-blue-deep" href="#contact">문의</a>
       <a class="inline-flex h-[42px] items-center rounded-[11px] bg-ink-900 px-[22px] text-[15px] font-bold text-white no-underline transition-[transform,background] duration-[180ms] hover:-translate-y-px hover:bg-blue-deep" href="https://dev.rooti.work/">로그인</a>
     </nav>
-  </header>`}var n=`/assets/hero-dashboard-Cu15YSeU.png`,r=`/assets/hero-splash-wOhRaiBu.png`,i=`w-[2.5px] origin-center rounded-[2px] bg-[#1e7ae4] animate-rt-wave motion-reduce:animate-none`,a=`
+  </header>`}var n=`/assets/hero-dashboard-CV9Xt6uJ.png`,r=`/assets/hero-splash-wOhRaiBu.png`,i=`w-[2.5px] origin-center rounded-[2px] bg-[#1e7ae4] animate-rt-wave motion-reduce:animate-none`,a=`
 <span class="flex h-[18px] items-center gap-[3px]" aria-hidden="true">
   <span class="${i}" style="height:6px;animation-delay:-.05s"></span>
   <span class="${i}" style="height:6px;animation-delay:.32s"></span>
@@ -215,7 +215,7 @@
         <img src="${G}" alt="Rooti 보호자 앱 - 홈 화면" class="w-full" />
       </div>
     </div>
-  </section>`}var q=`/assets/admin-dashboard-C4rKldk0.png`,se=[`통합 근무관리`,`업무 생성 및 배치`,`출퇴근 관리`,`근로일지`,`전체 일정 관리`,`서류 관리`,`근로자 관리`];function ce(){let e=se.map(v).join(``);return`
+  </section>`}var q=`/assets/admin-dashboard-KNWwzrAn.png`,se=[`통합 근무관리`,`업무 생성 및 배치`,`출퇴근 관리`,`근로일지`,`전체 일정 관리`,`서류 관리`,`근로자 관리`];function ce(){let e=se.map(v).join(``);return`
   <section class="${m} flex flex-col bg-white" data-screen-label="09 Admin">
     <div class="mb-9 flex flex-wrap items-end justify-between gap-5" data-reveal-stagger>
       <div data-reveal>
