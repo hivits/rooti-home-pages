@@ -62,7 +62,7 @@
         </div>
       </div>
     </div>
-  </section>`}var s=`/assets/sga-C0DmN-Ne.png`,c=`/assets/yonsei-Cro44Swk.png`,l=`/assets/kcc-DqU6JWwm.png`,u=`/assets/bitplanet-DWgkyT48.jpg`,ee=`/assets/kisca-CzL9aEdL.svg`,te=`/assets/kuh-BhstKM18.png`,ne=`/assets/moez-BZ_ITJAw.png`,re=`/assets/useplace-CNPBFzpI.png`,d=`/assets/kpr-CjyS2xfo.png`,f=`/assets/ckd-9fbXdkq8.jpg`,p=`/assets/daiso-BVurZFpG.jpg`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
+  </section>`}var s=`/assets/sga-DCRUIjvt.png`,c=`/assets/yonsei-DuwcsBgu.png`,l=`/assets/kcc-qpLjfdy_.png`,u=`/assets/bitplanet-BTfA7StN.jpg`,ee=`/assets/kisca-CzL9aEdL.svg`,te=`/assets/kuh-DCZjNwBw.png`,ne=`/assets/moez-cWCfQedV.png`,re=`/assets/useplace-BK1tDW34.png`,d=`/assets/kpr-O_hr_vaw.png`,f=`/assets/ckd-6_p6wDxL.jpg`,p=`/assets/daiso-CJPi15fg.jpg`,m=`relative w-full section-px py-16 md:py-[104px] scroll-mt-[72px]`;function h(e,t=`text-blue-primary`){return`<div class="mb-3 text-[15px] font-bold tracking-[0.18em] ${t}">${e}</div>`}function g(e){return`<h2 class="text-[32px] leading-[1.16] font-bold tracking-[-0.03em] text-ink-900 md:text-[46px]">${e}</h2>`}function _(e,t){return`
     <div class="mb-12 text-center" data-reveal>
       ${h(e)}
       ${g(t)}
@@ -73,11 +73,11 @@
         <div class="text-[20px] font-medium text-ink-900">${t}</div>
         <div class="mt-1 text-[16px] text-ink-400">${n}</div>
       </div>
-    </div>`}var ie=[{src:s,name:`SGA솔루션`},{src:c,name:`연세올바른재활의학과의원`},{src:l,name:`KCC`},{src:u,name:`비트플래닛`},{src:ee,name:`KISCA`},{src:te,name:`건국대학교병원`},{src:ne,name:`moez`},{src:re,name:`유즈플레이스`},{src:d,name:`KPR`},{src:f,name:`종근당`},{src:p,name:`다이소`}],b=`flex items-center gap-16 pr-16 md:gap-24 md:pr-24`;function ae(){let e=ie.map(e=>`
+    </div>`}var ie=[{src:s,name:`SGA솔루션`,h:`h-9 md:h-11`},{src:c,name:`연세올바른재활의학과의원`,h:`h-9 md:h-10`},{src:l,name:`KCC`,h:`h-[72px] md:h-24`},{src:u,name:`비트플래닛`,h:`h-9 md:h-10`},{src:ee,name:`KISCA`,h:`h-[72px] md:h-24`},{src:te,name:`건국대학교병원`,h:`h-12 md:h-14`},{src:ne,name:`moez`,h:`h-12 md:h-16`},{src:re,name:`유즈플레이스`,h:`h-9 md:h-11`},{src:d,name:`KPR`,h:`h-16 md:h-20`},{src:f,name:`종근당`,h:`h-12 md:h-14`},{src:p,name:`다이소`,h:`h-12 md:h-14`}],b=`flex items-center gap-16 pr-16 md:gap-24 md:pr-24`;function ae(){let e=ie.map(e=>`
       <figure class="flex shrink-0 flex-col items-center gap-3">
-        <span class="flex h-16 items-center md:h-20">
+        <span class="flex h-20 items-center md:h-24">
           <img src="${e.src}" alt="${e.name} 로고"
-            class="max-h-full w-auto max-w-[240px] object-contain" />
+            class="${e.h} w-auto max-w-[340px] object-contain" />
         </span>
         <figcaption class="text-[14px] font-medium whitespace-nowrap text-ink-400 md:text-[15px]">${e.name}</figcaption>
       </figure>`).join(``);return`
