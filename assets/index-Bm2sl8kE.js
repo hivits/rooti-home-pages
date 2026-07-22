@@ -78,7 +78,7 @@
         <img src="${e.src}" alt="${e.name} 로고"
           class="${e.h} w-auto max-w-[340px] object-contain" />
       </span>`).join(``);return`
-  <section class="relative w-full overflow-hidden bg-white pt-2 pb-16 section-px md:pb-24" data-screen-label="01b Partners">
+  <section class="relative w-full overflow-hidden bg-white pt-2 pb-16 md:pb-24" data-screen-label="01b Partners">
     <div class="mb-10 text-center" data-reveal>
       ${h(`TRUSTED BY`)}
       <div class="text-[19px] font-semibold text-ink-600">Rooti와 함께하는 기업</div>
@@ -97,33 +97,33 @@
 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
   <path d="M5 12h13M13 6l6 6-6 6" stroke="#A9B2C2" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>`,w=`
-<svg width="36" height="36" viewBox="0 0 24 24" fill="#1D4ED8" aria-hidden="true">
-  <path d="M8 5.5v13l11-6.5z"/>
-</svg>`,T=`
 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
   <path d="M12 19V6M6 12l6-6 6 6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>`,E=[`폐플라스틱`,`출근`,`루티 앱 실행`,`비츠봇`,`병뚜껑 분리 작업`,`업사이클링 키링 제작`];function D(){let e=E.map((e,t)=>`
+</svg>`,T=[`폐플라스틱`,`출근`,`루티 앱 실행`,`비츠봇`,`병뚜껑 분리 작업`,`업사이클링 키링 제작`];function E(){let e=T.map((e,t)=>`
       <span class="rounded-full border-[1.5px] border-blue-tint-border bg-white px-[19px] py-[11px] text-[16px] font-medium whitespace-nowrap text-ink-900 shadow-[0_6px_16px_-8px_rgb(37_99_235/0.35)] transition-transform duration-200 hover:-translate-y-0.5" data-reveal>${e}</span>
-      ${t<E.length-1?C:``}`).join(``);return`
+      ${t<T.length-1?C:``}`).join(``);return`
   <section id="video" class="${m} flex flex-col items-center bg-surface-alt" data-screen-label="02 Video">
     ${_(`SEE ROOTI IN 30s`,`Rooti와 함께하는 하루`)}
 
     <div class="relative aspect-video w-[1000px] max-w-full overflow-hidden rounded-3xl bg-[linear-gradient(135deg,#1c3a2a,#101d36)] shadow-[0_50px_100px_-38px_rgb(16_26_48/0.46)]" data-reveal>
-      <div class="absolute inset-0 bg-[linear-gradient(160deg,rgb(37_99_235/0.34),rgb(20_32_26/0.6))]"></div>
-      <div class="absolute inset-0 flex flex-col items-center justify-center gap-5">
-        <button class="flex size-24 cursor-pointer items-center justify-center rounded-full border-none bg-white/95 shadow-[0_16px_46px_rgb(0_0_0/0.32)] transition-transform duration-250 hover:scale-[1.07]" aria-label="소개 영상 재생">${w}</button>
-        <div class="text-center text-white">
-          <img src="${x}" alt="Rooti" class="inline-block h-[30px] w-auto" />
-          <div class="mt-2 text-[15px] opacity-80">서비스 소개 영상 · 00:30</div>
-        </div>
-      </div>
-      <div class="absolute right-[22px] bottom-5 left-[22px] h-[5px] rounded-full bg-white/25">
-        <span class="block h-full w-[14%] rounded-full bg-white"></span>
+      <video
+        class="h-full w-full object-cover"
+        src="/intro.mp4"
+        muted
+        loop
+        playsinline
+        preload="metadata"
+        aria-label="Rooti 서비스 소개 영상"
+        data-intro-video
+      ></video>
+      <div class="pointer-events-none absolute right-5 bottom-4 flex items-center gap-2 opacity-80">
+        <img src="${x}" alt="" aria-hidden="true" class="h-5 w-auto" />
+        <span class="text-[13px] font-medium text-white/80">서비스 소개 영상 · 00:27</span>
       </div>
     </div>
 
     <div class="mt-14 flex flex-wrap items-center justify-center gap-[11px]" data-reveal-stagger>${e}</div>
-  </section>`}var O=[{no:`1`,category:`근무 관리`,asIs:`복잡한 근무 관리`,toBe:`출퇴근부터 휴가까지 하나로 관리`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 13a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3Z" stroke="#fff" stroke-width="1.8"/><path d="M6 10a6 6 0 0 0 12 0M12 16v3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`},{no:`2`,category:`접근성`,asIs:`장애를 고려하지 않은 시스템`,toBe:`장애 유형별 맞춤형 UI·UX 제공`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M7 3h7l4 4v14H7z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 3v5h5M9.5 13l1.6 1.6L15 11" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`},{no:`3`,category:`업무·소통`,asIs:`어려운 업무 전달과 소통`,toBe:`AI 업무 안내와 빠른 연결 지원`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" fill="#fff"/></svg>`},{no:`4`,category:`기업 관리`,asIs:`높은 관리 부담`,toBe:`기업을 위한 통합 근무 관리 시스템`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5.5 4h3l1.5 4.5L7.8 10.2a11 11 0 0 0 5 5l1.7-2.2 4.5 1.5V18a2 2 0 0 1-2.2 2A14.5 14.5 0 0 1 3.5 6.2 2 2 0 0 1 5.5 4Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`}];function k(){let e=O.map(e=>`
+  </section>`}function D(){let e=document.querySelector(`[data-intro-video]`);if(e){if(window.matchMedia(`(prefers-reduced-motion: reduce)`).matches){e.controls=!0;return}new IntersectionObserver(t=>{for(let n of t)n.isIntersecting?e.play().catch(()=>{}):e.pause()},{threshold:.35}).observe(e),e.play().catch(()=>{})}}var O=[{no:`1`,category:`근무 관리`,asIs:`복잡한 근무 관리`,toBe:`출퇴근부터 휴가까지 하나로 관리`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 13a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v4a3 3 0 0 0 3 3Z" stroke="#fff" stroke-width="1.8"/><path d="M6 10a6 6 0 0 0 12 0M12 16v3" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>`},{no:`2`,category:`접근성`,asIs:`장애를 고려하지 않은 시스템`,toBe:`장애 유형별 맞춤형 UI·UX 제공`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M7 3h7l4 4v14H7z" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 3v5h5M9.5 13l1.6 1.6L15 11" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`},{no:`3`,category:`업무·소통`,asIs:`어려운 업무 전달과 소통`,toBe:`AI 업무 안내와 빠른 연결 지원`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="#fff" stroke-width="1.8"/><circle cx="12" cy="12" r="2.6" fill="#fff"/></svg>`},{no:`4`,category:`기업 관리`,asIs:`높은 관리 부담`,toBe:`기업을 위한 통합 근무 관리 시스템`,icon:`<svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5.5 4h3l1.5 4.5L7.8 10.2a11 11 0 0 0 5 5l1.7-2.2 4.5 1.5V18a2 2 0 0 1-2.2 2A14.5 14.5 0 0 1 3.5 6.2 2 2 0 0 1 5.5 4Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`}];function k(){let e=O.map(e=>`
     <div class="flex flex-col" data-reveal>
       <div class="mb-2 text-center">
         <span class="inline-flex items-center justify-center text-[15px] font-semibold text-[#a9b2c2]">${e.no}</span>
@@ -312,7 +312,7 @@
     aria-label="맨 위로"
     data-back-to-top
   >
-    ${T}
+    ${w}
   </button>`}function ge(){let e=document.querySelector(`[data-back-to-top]`);if(!e)return;e.addEventListener(`click`,()=>{window.scrollTo({top:0,behavior:`smooth`})});let t=()=>{let t=window.scrollY>600;e.classList.remove(...t?X:Z),e.classList.add(...t?Z:X)};t(),window.addEventListener(`scroll`,t,{passive:!0})}var Q=`w-[5px] origin-center rounded-full animate-rt-wave motion-reduce:animate-none`,$=`
 <span class="flex h-9 items-end justify-center gap-[5px]" aria-hidden="true">
   <span class="${Q} bg-blue-tint-border" style="height:12px;animation-delay:.55s"></span>
@@ -339,7 +339,7 @@
   <main>
     ${o()}
     ${ae()}
-    ${D()}
+    ${E()}
     ${k()}
     ${j()}
     ${W()}
@@ -350,4 +350,4 @@
   </main>
   ${me()}
   ${he()}
-`,ge(),Se(),ve(()=>{be(),xe()});
+`,ge(),Se(),D(),ve(()=>{be(),xe()});
