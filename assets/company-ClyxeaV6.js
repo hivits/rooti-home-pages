@@ -1,0 +1,1 @@
+var e={name:`하이비츠`,service:`루티(Rooti)`,ceo:`최찬숙`,bizNo:`788-86-01781`,address:`서울특별시 구로구 디지털로31길 62, 1013·1014호 (구로동, 아티스포럼)`,phone:`02-3281-8880`,email:`hivits@naver.com`,site:`https://rooti.work`},t={name:`서지완`,email:`xixn2@efface.dev`};export{t as n,e as t};
